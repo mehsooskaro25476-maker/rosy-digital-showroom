@@ -42,11 +42,11 @@
 </head>
 <body>
 
-    <!-- 1. स्वागत स्क्रीन - फ़ाइल का नाम बिल्कुल अक्षरों के मिलान के साथ सुधारा गया -->
+    <!-- 1. स्वागत स्क्रीन - डुअल लोडर फिक्स -->
     <div id="welcome-screen">
         <div class="welcome-card">
             <div class="profile-img-container">
-                <img src="Veena.jpg" alt="Mrs. Veena Jindal">
+                <img src="Veena.jpg" alt="Mrs. Veena Jindal" onerror="this.src='Veena.JPG'; this.onerror=function(){this.src='https://rosyelectronics.com';}">
             </div>
             <div class="welcome-text-side">
                 <h2>Mrs. Veena Jindal</h2>
@@ -101,24 +101,22 @@
 
         <br><hr style="border-color:#334155;"><br>
 
-        <!-- लीडरशिप टीम - .JPG एक्सटेंशन और कैपिटल लेटर्स पूरी तरह फिक्स -->
+        <!-- लीडरशिप टीम - डुअल लोडर ऑटो फिक्स -->
         <div class="section-title" style="margin-bottom:20px;">Leadership & Core Vision</div>
         <div class="grid-3" id="leadership-group">
             <div class="card">
-                <div class="card-img"><img src="neeraj.JPG" alt="CEO"></div>
+                <div class="card-img">
+                    <img src="neeraj.jpg" alt="CEO" onerror="this.src='neeraj.JPG'; this.onerror=function(){this.src='https://rosyelectronics.com';}">
+                </div>
                 <h3>Mr. Neeraj Bharara</h3><h4>Chief Executive Officer (CEO)</h4>
                 <p>50 से अधिक वर्षों से सटीकता, ईमानदारी और कस्टमाइज्ड इंजीनियरिंग के माध्यम से अपने क्लाइंट्स के भरोसे को सुदृढ़ करने में प्रतिबद्ध।</p>
             </div>
             <div class="card">
-                <div class="card-img"><img src="Surjit.jpg" alt="COO"></div>
+                <div class="card-img">
+                    <img src="Surjit.jpg" alt="COO" onerror="this.src='Surjit.JPG'; this.onerror=function(){this.src='https://rosyelectronics.com';}">
+                </div>
                 <h3>Mr. Surjit K Singh</h3><h4>Chief Operating Officer (COO)</h4>
                 <p>कंपनी के दैनिक ऑपरेशंस, सुचारू फैक्टरी मैन्युफैक्चरिंग, सप्लाई चेन और ऑन-टाइम डिलीवरी मैनेजमेंट के रणनीतिक प्रमुख।</p>
             </div>
             <div class="card">
-                <div class="card-img"><img src="rajinder.JPG" alt="Director"></div>
-                <h3>Mr. Rajinder Bharara</h3><h4>Technical Director</h4>
-                <p>अंतरराष्ट्रीय मानकों के तहत प्लांट के संपूर्ण एडवांस इंजीनियरिंग, डिजाइनिंग और टेक्निकल ऑपरेशंस के मुख्य नीति-निर्धारक।</p>
-            </div>
-        </div>
-
-        <!-- आरएंडडी टीम - कैपिटल लेटर्स पूरी तरह फिक्स -->
+                <div class="card-img">
