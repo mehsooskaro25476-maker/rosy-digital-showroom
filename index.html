@@ -8,7 +8,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #0f172a; font-family: 'Segoe UI', Arial, sans-serif; color: #fff; min-height: 100vh; overflow-x: hidden; padding-bottom: 40px; }
         
-        /* 1. स्वागत स्क्रीन */
+        /* 1. भव्य स्वागत स्क्रीन */
         #welcome-screen { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #0b0f19; z-index: 99999; display: flex; justify-content: center; align-items: center; padding: 20px; }
         .welcome-card { background: #1e293b; max-width: 800px; width: 100%; border-radius: 20px; padding: 30px; border: 1px solid #334155; box-shadow: 0 20px 40px rgba(0,0,0,0.6); display: flex; flex-direction: column; align-items: center; gap: 25px; text-align: center; }
         @media(min-width: 600px) { .welcome-card { flex-direction: row; text-align: left; } }
@@ -23,7 +23,6 @@
         .company-header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #3b82f6; padding-bottom: 15px; }
         .company-header h1 { font-size: 2.2rem; color: #3b82f6; font-weight: bold; }
         
-        /* पूरी तरह से फिक्स लेआउट ग्रिड */
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 40px; }
         
@@ -46,7 +45,7 @@
         .select-btn.active { background: #3b82f6; color: #fff; border-color: #3b82f6; }
         .color-flex { display: flex; gap: 20px; margin-bottom: 30px; }
         .color-dot { width: 38px; height: 38px; border-radius: 50%; cursor: pointer; border: 3px solid #1e293b; }
-        .color-dot.active { border-color: #fff; transform: scale(1.18); }
+        .color-dot.active { border-color: #fff; transform: scale(1.18); box-shadow: 0 0 10px rgba(255,255,255,0.5); }
         .whatsapp-btn { width: 100%; background: #25d366; color: #fff; border: none; padding: 18px; border-radius: 12px; font-size: 1.25rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(37,211,102,0.4); }
     </style>
 </head>
@@ -112,7 +111,7 @@
 
         <br><hr style="border-color:#334155;"><br>
 
-        <!-- लीडरशिप टीम (स्वतंत्र और पूरी तरह बंद ब्लॉक) -->
+        <!-- लीडरशिप टीम -->
         <div class="section-title" style="margin-bottom:20px;">Leadership & Core Vision</div>
         <div class="grid-3" id="leadership-group">
             <div class="card">
@@ -123,7 +122,7 @@
             <div class="card">
                 <div class="card-img"><img src="Surjit.jpg" alt="COO"></div>
                 <h3>Mr. Surjit K Singh</h3><h4>Chief Operating Officer (COO)</h4>
-                <p>कंपनी के दैनिक ऑपरेशंस, सुचारू फैक्टरी मैन्युफैक्चरिंग, सप्लाई चेन और ऑन-टाइम डिलीवरी Management के रणनीतिक प्रमुख।</p>
+                <p>कंपनी के दैनिक ऑपरेशंस, सुचारू फैक्टरी मैन्युफैक्चरिंग, सप्लाई链 चेन और ऑन-टाइम डिलीवरी Management के रणनीतिक प्रमुख।</p>
             </div>
             <div class="card">
                 <div class="card-img"><img src="rajinder.jpg" alt="Director"></div>
