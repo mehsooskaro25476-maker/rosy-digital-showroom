@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Rosy Electronics - Virtual Showroom</title>
+    <title>Rosy Electronics - Digital Showroom</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #0f172a; font-family: 'Segoe UI', Arial, sans-serif; color: #fff; min-height: 100vh; overflow-x: hidden; padding-bottom: 40px; }
@@ -25,7 +25,7 @@
         .card-img img { width: 100%; height: 100%; object-fit: cover; }
         .card h3 { font-size: 1.25rem; color: #ff9900; margin-bottom: 5px; font-weight: bold; }
         .card h4 { font-size: 0.95rem; color: #3b82f6; margin-bottom: 12px; }
-        .card p { font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; text-align: center; }
+        .card p { font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; }
         .product-display-window { width: 100%; height: 260px; background: radial-gradient(circle, #334155 0%, #0f172a 100%); border-radius: 15px; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; margin-bottom: 30px; border: 1px solid #475569; }
         .ct-box-simulation { width: 110px; height: 110px; border-radius: 15px; transition: all 0.5s ease; position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.7); transform: rotateX(15deg) rotateY(-15deg); display: flex; justify-content: center; align-items: center; }
         .ct-box-simulation::before { content: ''; width: 45px; height: 45px; background: #0f172a; border-radius: 50%; }
@@ -42,11 +42,11 @@
 </head>
 <body>
 
-    <!-- 1. Welcome Screen (तस्वीरें सीधे आपकी मुख्य वेबसाइट से कनेक्टेड) -->
+    <!-- 1. स्वागत स्क्रीन - छोटे अक्षरों में veena.jpg सेट -->
     <div id="welcome-screen">
         <div class="welcome-card">
             <div class="profile-img-container">
-                <img src="https://rosyelectronics.com" alt="Mrs. Veena Jindal" onerror="this.src='https://placehold.co'">
+                <img src="veena.jpg" alt="Mrs. Veena Jindal">
             </div>
             <div class="welcome-text-side">
                 <h2>Mrs. Veena Jindal</h2>
@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <!-- 2. Main Virtual Showroom -->
+    <!-- 2. मुख्य वर्चुअल शोरूम -->
     <div class="container">
         <div class="company-header">
             <h1>ROSY Electronics</h1>
@@ -101,22 +101,25 @@
 
         <br><hr style="border-color:#334155;"><br>
 
-        <!-- Leadership Team -->
+        <!-- लीडरशिप टीम - छोटे अक्षरों में नाम सेट फिक्स -->
         <div class="section-title" style="margin-bottom:20px;">Leadership & Core Vision</div>
         <div class="grid-3" id="leadership-group">
             <div class="card">
-                <div class="card-img">
-                    <img src="https://rosyelectronics.com" alt="CEO" onerror="this.src='https://placehold.co'">
-                </div>
+                <div class="card-img"><img src="neeraj.jpg" alt="CEO"></div>
                 <h3>Mr. Neeraj Bharara</h3><h4>Chief Executive Officer (CEO)</h4>
                 <p>50 से अधिक वर्षों से सटीकता, ईमानदारी और कस्टमाइज्ड इंजीनियरिंग के माध्यम से अपने क्लाइंट्स के भरोसे को सुदृढ़ करने में प्रतिबद्ध।</p>
             </div>
             <div class="card">
-                <div class="card-img">
-                    <img src="https://rosyelectronics.com" alt="COO" onerror="this.src='https://placehold.co'">
-                </div>
+                <div class="card-img"><img src="surjit.jpg" alt="COO"></div>
                 <h3>Mr. Surjit K Singh</h3><h4>Chief Operating Officer (COO)</h4>
                 <p>कंपनी के दैनिक ऑपरेशंस, सुचारू फैक्टरी मैन्युफैक्चरिंग, सप्लाई चेन और ऑन-टाइम डिलीवरी Management के रणनीतिक प्रमुख।</p>
             </div>
             <div class="card">
-                <div class="card-img">
+                <div class="card-img"><img src="rajinder.jpg" alt="Director"></div>
+                <h3>Mr. Rajinder Bharara</h3><h4>Technical Director</h4>
+                <p>अंतरराष्ट्रीय मानकों के तहत प्लांट के संपूर्ण एडवांस इंजीनियरिंग, डिजाइनिंग और टेक्निकल ऑपरेशंस के मुख्य नीति-निर्धारक।</p>
+            </div>
+        </div>
+
+        <!-- आरएंडडी टीम - छोटे अक्षरों में नाम सेट फिक्स -->
+        <div class="section-title" style="margin-bottom:20px;">Our Core Engineering Strength</div>
