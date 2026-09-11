@@ -116,12 +116,12 @@
             <p>नमस्ते और हार्दिक स्वागत! मैं वीना जिंदल, ROSY Electronics Groups of Companies की ओर से हमारे इस डिजिटल प्लेटफॉर्म पर आपका स्वागत करती हूँ। पिछले 50 से अधिक वर्षों से हमारी company कस्टमाइज्ड करंट ट्रांसफॉर्मर्स बनाने में एक विश्वसनीय नाम रही है। हम केवल उत्पाद नहीं बेचते, बल्कि आपके द्वारा दिए गए सटीक मापदंडों (Specifications) के आधार पर आपके भरोसे को डिज़ाइन करते हैं। हमारे साथ सीधे जुड़ने के लिए नीचे दिए गए बटन का उपयोग करें।</p>
             
             <div class="button-group">
-                <!-- १. बिल्कुल साफ़-सुथरा व्हाट्सएप बटन -->
-                <a href="https://whatsapp.com" target="_blank" class="action-btn whatsapp-btn">
+                <!-- स्मार्ट एक्शन व्हाट्सएप बटन (स्मार्ट सेंसर द्वारा नियंत्रित) -->
+                <button onclick="openSmartWhatsApp()" class="action-btn whatsapp-btn">
                     💬 सीधे WhatsApp पर बात करें
-                </a>
+                </button>
                 
-                <!-- २. बिल्कुल साफ़-सुथरा वेबसाइट बटन -->
+                <!-- मुख्य वेबसाइट बटन -->
                 <a href="https://rosyelectronics.com" target="_blank" class="action-btn website-btn">
                     🌐 हमारी मुख्य वेबसाइट पर जाएँ
                 </a>
@@ -129,5 +129,27 @@
         </div>
     </div>
 
+    <script>
+        function openSmartWhatsApp() {
+            const myNumber = "918130698114";
+            const textMessage = "नमस्ते Rosy Electronics! 👋\n\nमुझे करंट ट्रांसफॉर्मर (Current Transformer) के बारे में पूछताछ करनी है।";
+            const encodedText = encodeURIComponent(textMessage);
+            
+            // मोबाइल डिवाइस की पहचान करने का स्मार्ट सेंसर
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            
+            let finalLink = "";
+            if (isMobile) {
+                // मोबाइल के लिए सीधे व्हाट्सएप ऐप का लिंक
+                finalLink = `whatsapp://send?phone=${myNumber}&text=${encodedText}`;
+            } else {
+                // डेस्कटॉप/लैपटॉप के लिए व्हाट्सएप वेब वेबसाइट का लिंक
+                finalLink = `https://whatsapp.com{myNumber}&text=${encodedText}`;
+            }
+            
+            // लिंक को नए टैब में सुरक्षित तरीके से खोलें
+            window.open(finalLink, '_blank');
+        }
+    </script>
 </body>
 </html>
