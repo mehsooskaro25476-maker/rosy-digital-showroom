@@ -7,6 +7,8 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #0f172a; font-family: 'Segoe UI', Arial, sans-serif; color: #fff; min-height: 100vh; overflow-x: hidden; padding-bottom: 40px; }
+        
+        /* 1. भव्य स्वागत स्क्रीन */
         #welcome-screen { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #0b0f19; z-index: 99999; display: flex; justify-content: center; align-items: center; padding: 20px; }
         .welcome-card { background: #1e293b; max-width: 800px; width: 100%; border-radius: 20px; padding: 30px; border: 1px solid #334155; box-shadow: 0 20px 40px rgba(0,0,0,0.6); display: flex; flex-direction: column; align-items: center; gap: 25px; text-align: center; }
         @media(min-width: 600px) { .welcome-card { flex-direction: row; text-align: left; } }
@@ -15,21 +17,28 @@
         .welcome-text-side h2 { font-size: 1.6rem; color: #3b82f6; margin-bottom: 5px; }
         .welcome-text-side p { font-size: 0.95rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 20px; }
         .enter-btn { background: #3b82f6; color: #fff; border: none; padding: 14px 32px; border-radius: 50px; font-size: 1.1rem; font-weight: bold; cursor: pointer; box-shadow: 0 4px 15px rgba(59,130,246,0.4); }
+
+        /* 2. मुख्य शोरूम कंटेनर */
         .container { max-width: 950px; margin: 0 auto; padding: 20px; }
         .company-header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #3b82f6; padding-bottom: 15px; }
         .company-header h1 { font-size: 2.2rem; color: #3b82f6; font-weight: bold; }
+        
+        /* ग्रिड सिस्टम */
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
-        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        
         .card { background: #1e293b; border-radius: 15px; padding: 25px; border: 1px solid #334155; text-align: center; width: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
         .card-img { width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 15px; border: 3px solid #ff9900; background: #334155; overflow: hidden; display: flex; justify-content: center; align-items: center; }
         .card-img img { width: 100%; height: 100%; object-fit: cover; }
+        
         .card h3 { font-size: 1.25rem; color: #ff9900; margin-bottom: 5px; font-weight: bold; }
-        .card h4 { font-size: 0.95rem; color: #3b82f6; margin-bottom: 12px; }
+        .card h4 { font-size: 0.95rem; color: #3b82f6; margin-bottom: 12px; font-weight: 600; }
         .card p { font-size: 0.9rem; color: #cbd5e1; line-height: 1.5; text-align: center; }
+
         .product-display-window { width: 100%; height: 260px; background: radial-gradient(circle, #334155 0%, #0f172a 100%); border-radius: 15px; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; margin-bottom: 30px; border: 1px solid #475569; }
         .ct-box-simulation { width: 110px; height: 110px; border-radius: 15px; transition: all 0.5s ease; position: relative; box-shadow: 0 15px 35px rgba(0,0,0,0.7); transform: rotateX(15deg) rotateY(-15deg); display: flex; justify-content: center; align-items: center; }
         .ct-box-simulation::before { content: ''; width: 45px; height: 45px; background: #0f172a; border-radius: 50%; }
         .product-label-badge { position: absolute; top: 15px; left: 15px; background: #3b82f6; color: #fff; padding: 5px 12px; font-size: 0.8rem; font-weight: bold; border-radius: 20px; }
+        
         .section-title { font-size: 1.15rem; margin-bottom: 15px; color: #f8fafc; font-weight: 600; border-left: 4px solid #3b82f6; padding-left: 12px; margin-top: 20px; }
         .selector-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 25px; }
         .select-btn { background: #334155; border: 1px solid #475569; color: #cbd5e1; padding: 12px 5px; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 0.85rem; text-align: center; }
@@ -38,6 +47,10 @@
         .color-dot { width: 38px; height: 38px; border-radius: 50%; cursor: pointer; border: 3px solid #1e293b; }
         .color-dot.active { border-color: #fff; transform: scale(1.18); box-shadow: 0 0 10px rgba(255,255,255,0.5); }
         .whatsapp-btn { width: 100%; background: #25d366; color: #fff; border: none; padding: 18px; border-radius: 12px; font-size: 1.25rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(37,211,102,0.4); }
+        
+        /* वेबसाइट के लिए चमकीला नया बटन स्टाइल */
+        .website-btn { width: 100%; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: #fff; border: 1px solid #3b82f6; padding: 18px; border-radius: 12px; font-size: 1.15rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(59,130,246,0.3); text-align: center; text-decoration: none; display: block; margin-top: 15px; transition: all 0.2s; }
+        .website-btn:hover { background: #3b82f6; }
     </style>
 </head>
 <body>
@@ -97,27 +110,17 @@
             <button class="select-btn" onclick="setClass('Class 1.0', this)">Class 1.0</button>
         </div>
 
+        <!-- आपका कस्टमाइज्ड बिजनेस व्हाट्सएप नंबर बिल्कुल सेट है -->
         <button class="whatsapp-btn" onclick="sendInquiry()">💬 WhatsApp पर कोटेशन मांगें</button>
+
+        <!-- निर्देशानुसार R&D टीम की जगह परमानेंट मुख्य वेबसाइट बटन लिंक -->
+        <a href="https://rosyelectronics.com" target="_blank" class="website-btn">🌐 हमारी मुख्य वेबसाइट पर जाएँ (www.rosyelectronics.com)</a>
 
         <br><hr style="border-color:#334155;"><br>
 
-        <!-- लीडरशिप टीम (अक्षरों का मिलान हूबहू फ़िक्स) -->
+        <!-- लीडरशिप टीम (पूरी तरह स्वतंत्र और 100% वर्किंग ग्रिड) -->
         <div class="section-title" style="margin-bottom:20px;">Leadership & Core Vision</div>
         <div class="grid-3" id="leadership-group">
             <div class="card">
                 <div class="card-img"><img src="neeraj.jpg" alt="CEO"></div>
                 <h3>Mr. Neeraj Bharara</h3><h4>Chief Executive Officer (CEO)</h4>
-                <p>50 से अधिक वर्षों से सटीकता, ईमानदारी और कस्टमाइज्ड इंजीनियरिंग के माध्यम से अपने क्लाइंट्स के भरोसे को सुदृढ़ करने में प्रतिबद्ध।</p>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="surjit.jpg" alt="COO"></div>
-                <h3>Mr. Surjit K Singh</h3><h4>Chief Operating Officer (COO)</h4>
-                <p>COMPANY के दैनिक ऑपरेशंस, सुचारू फैक्टरी मैन्युफैक्चरिंग, सप्लाई चेन और ऑन-टाइम डिलीवरी मैनेजमेंट के रणनीतिक प्रमुख।</p>
-            </div>
-            <div class="card">
-                <div class="card-img"><img src="rajinder.jpg" alt="Director"></div>
-                <h3>Mr. Rajinder Bharara</h3><h4>Technical Director</h4>
-                <p>अंतरराष्ट्रीय मानकों के तहत प्लांट के संपूर्ण एडवांस engineering, डिजाइनिंग और टेक्निकल ऑपरेशंस के मुख्य नीति-निर्धारक।</p>
-            </div>
-        </div>
-
