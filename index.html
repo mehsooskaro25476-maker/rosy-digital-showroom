@@ -23,7 +23,7 @@
         .company-header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #3b82f6; padding-bottom: 15px; }
         .company-header h1 { font-size: 2.2rem; color: #3b82f6; font-weight: bold; }
         
-        /* ग्रिड सिस्टम */
+        /* ग्रिड सिस्टम - पूरी तरह से स्वतंत्र */
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
         
         .card { background: #1e293b; border-radius: 15px; padding: 25px; border: 1px solid #334155; text-align: center; width: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
@@ -46,11 +46,9 @@
         .color-flex { display: flex; gap: 20px; margin-bottom: 30px; }
         .color-dot { width: 38px; height: 38px; border-radius: 50%; cursor: pointer; border: 3px solid #1e293b; }
         .color-dot.active { border-color: #fff; transform: scale(1.18); box-shadow: 0 0 10px rgba(255,255,255,0.5); }
-        .whatsapp-btn { width: 100%; background: #25d366; color: #fff; border: none; padding: 18px; border-radius: 12px; font-size: 1.25rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(37,211,102,0.4); }
         
-        /* वेबसाइट के लिए चमकीला नया बटन स्टाइल */
+        .whatsapp-btn { width: 100%; background: #25d366; color: #fff; border: none; padding: 18px; border-radius: 12px; font-size: 1.25rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(37,211,102,0.4); display: block; margin-bottom: 15px; text-align: center; }
         .website-btn { width: 100%; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: #fff; border: 1px solid #3b82f6; padding: 18px; border-radius: 12px; font-size: 1.15rem; font-weight: bold; cursor: pointer; box-shadow: 0 5px 20px rgba(59,130,246,0.3); text-align: center; text-decoration: none; display: block; margin-top: 15px; transition: all 0.2s; }
-        .website-btn:hover { background: #3b82f6; }
     </style>
 </head>
 <body>
@@ -110,17 +108,17 @@
             <button class="select-btn" onclick="setClass('Class 1.0', this)">Class 1.0</button>
         </div>
 
-        <!-- आपका कस्टमाइज्ड बिजनेस व्हाट्सएप नंबर बिल्कुल सेट है -->
+        <!-- व्हाट्सएप लिंक और मुख्य वेबसाइट का स्वतंत्र फिक्स -->
         <button class="whatsapp-btn" onclick="sendInquiry()">💬 WhatsApp पर कोटेशन मांगें</button>
-
-        <!-- निर्देशानुसार R&D टीम की जगह परमानेंट मुख्य वेबसाइट बटन लिंक -->
-        <a href="https://rosyelectronics.com" target="_blank" class="website-btn">🌐 हमारी मुख्य वेबसाइट पर जाएँ (www.rosyelectronics.com)</a>
+        <a href="https://rosyelectronics.com" target="_blank" class="website-btn">🌐 हमारी मुख्य वेबसाइट पर जाएँ (://rosyelectronics.com)</a>
 
         <br><hr style="border-color:#334155;"><br>
 
-        <!-- लीडरशिप टीम (पूरी तरह स्वतंत्र और 100% वर्किंग ग्रिड) -->
+        <!-- लीडरशिप टीम (पूरी तरह से स्वतंत्र और सुरक्षित संरचना) -->
         <div class="section-title" style="margin-bottom:20px;">Leadership & Core Vision</div>
         <div class="grid-3" id="leadership-group">
             <div class="card">
                 <div class="card-img"><img src="neeraj.jpg" alt="CEO"></div>
                 <h3>Mr. Neeraj Bharara</h3><h4>Chief Executive Officer (CEO)</h4>
+                <p>50 से अधिक वर्षों से सटीकता, ईमानदारी और कस्टमाइज्ड इंजीनियरिंग के माध्यम से अपने क्लाइंट्स के भरोसे को सुदृढ़ करने में प्रतिबद्ध।</p>
+            </div>
